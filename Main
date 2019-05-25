@@ -1,0 +1,29 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lista.enlazada;
+import lista.enlazada.Node;
+import java.util.ArrayList;
+/**
+ *
+ * @author boyfa
+ */
+public class Main2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+            
+       List lista = new List();
+        
+       lista.insert(0);
+       lista.insert(2);
+       lista.insert(3);
+       
+       lista.printList(); 
+    
+    }
+}
