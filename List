@@ -1,0 +1,49 @@
+package lista.enlazada;
+import lista.enlazada.Node;
+public class List {
+    public Node head;
+    
+    public List(){
+    }
+    
+    
+    public void insert(float x){
+      Node newnode = new Node(x);
+      newnode.next = null;
+      
+      if (head == null){
+          head = newnode;
+      }else{
+          Node last = head;
+          while(last.next != null){
+              last =  last.next;
+          }
+          last.next = newnode;          
+      }       
+    }
+    
+    public void printList() { 
+        Node currNode = head; 
+   
+        System.out.print("LinkedList: "); 
+        while (currNode != null) { 
+            System.out.print(currNode.data + " "); 
+            currNode = currNode.next; 
+        }
+        System.out.println("");
+    } 
+    
+    public static float getSum(List lista){
+        Node current = lista.head;
+        
+        float result = 0;
+        
+        while(current != null){
+            result += current.data;
+            
+            current = current.next;
+        }
+        return result;
+    }
+
+    }
