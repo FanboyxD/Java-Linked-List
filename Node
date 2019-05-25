@@ -1,0 +1,9 @@
+package lista.enlazada;
+public class Node {
+    public float data;
+    public Node next; 
+    
+    Node(float x){
+       data = x;
+    }
+}
